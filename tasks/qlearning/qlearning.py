@@ -3,8 +3,8 @@ import random
 import numpy as np
 import tqdm
 
-env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=True)
-render_env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=True, render_mode="human")
+env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=False)
+render_env = gym.make("FrozenLake-v1", map_name="4x4", is_slippery=False, render_mode="human")
 
 # Q learning
 LEARNING_RATE = 0.7
